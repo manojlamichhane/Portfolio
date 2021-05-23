@@ -16,8 +16,8 @@ function Projects(props) {
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Projects</h1>
-      <Grid container spacing={3} style={{ marginTop: 100 }}>
-        <Grid item xs={6}>
+      <Grid container style={{ marginTop: 100 }}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <a href="https://infallible-hawking-a9f66e.netlify.app/">
             <img
               src={reactCrud}
@@ -26,7 +26,7 @@ function Projects(props) {
             />
           </a>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <a href="https://manoj9-movies.netlify.app/">
             <img
               src={reactMovies}
@@ -35,92 +35,87 @@ function Projects(props) {
             />
           </a>
         </Grid>
-      </Grid>
-      <Grid container spacing={3}>
-        <Grid item xs={2}>
+        <Grid item xs={4} sm={3} lg={2}>
           <a href="https://github.com/manojlamichhane/reactNativeUIs.git">
             <img
               src={rnui2}
               alt="reactnative-ui"
-              style={{ width: 150, height: 270 }}
+              style={{ width: 190, height: 270 }}
             />
           </a>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={4} sm={3} lg={2}>
           <a href="https://github.com/manojlamichhane/reactNativeUIs.git">
             <img
               src={rnui3}
               alt="reactnative-ui"
-              style={{ width: 150, height: 270 }}
+              style={{ width: 190, height: 270 }}
             />
           </a>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={4} sm={3} lg={2}>
           <a href="https://github.com/manojlamichhane/reactNativeUIs.git">
             <img
               src={rnuifood}
               alt="reactnative-ui"
-              style={{ width: 150, height: 270 }}
+              style={{ width: 190, height: 270 }}
             />
           </a>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={4} sm={3} lg={2}>
           <a href="https://github.com/manojlamichhane/reactNativeUIs.git">
             <img
               src={rnuifoods}
               alt="reactnative-ui"
-              style={{ width: 150, height: 270 }}
+              style={{ width: 190, height: 270 }}
             />
           </a>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={4} sm={3} lg={2}>
           <a href="https://github.com/manojlamichhane/reactNativeUIs.git">
             <img
               src={rnuiattendance}
               alt="reactnative-ui"
-              style={{ width: 150, height: 270 }}
+              style={{ width: 190, height: 270 }}
             />
           </a>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={4} sm={3} lg={2}>
           <a href="https://github.com/manojlamichhane/FireBaseApplication">
             <img
               src={rnapp}
               alt="reactnative-app"
-              style={{ width: 150, height: 270 }}
+              style={{ width: 190, height: 270 }}
             />
           </a>
         </Grid>
-      </Grid>
-      <Grid>
-        <Grid container spacing={3}>
-          <Grid item xs={2}>
-            <a href="https://github.com/manojlamichhane/RNonbarding.git">
-              <img
-                src={rnui1}
-                alt="reactnative-ui"
-                style={{ width: 150, height: 270 }}
-              />
-            </a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href="https://github.com/manojlamichhane/RNonbarding.git">
-              <img
-                src={rnui4}
-                alt="reactnative-ui"
-                style={{ width: 150, height: 270 }}
-              />
-            </a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href="https://github.com/manojlamichhane/RNonbarding.git">
-              <img
-                src={rnui5}
-                alt="reactnative-ui"
-                style={{ width: 150, height: 270 }}
-              />
-            </a>
-          </Grid>
+
+        <Grid item xs={4} sm={3} lg={2}>
+          <a href="https://github.com/manojlamichhane/RNonbarding.git">
+            <img
+              src={rnui1}
+              alt="reactnative-ui"
+              style={{ width: 190, height: 270 }}
+            />
+          </a>
+        </Grid>
+        <Grid item xs={4} sm={3} lg={2}>
+          <a href="https://github.com/manojlamichhane/RNonbarding.git">
+            <img
+              src={rnui4}
+              alt="reactnative-ui"
+              style={{ width: 190, height: 270 }}
+            />
+          </a>
+        </Grid>
+        <Grid item xs={4} sm={3} lg={2}>
+          <a href="https://github.com/manojlamichhane/RNonbarding.git">
+            <img
+              src={rnui5}
+              alt="reactnative-ui"
+              style={{ width: 190, height: 270 }}
+            />
+          </a>
         </Grid>
       </Grid>
     </div>
