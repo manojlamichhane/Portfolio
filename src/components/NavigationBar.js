@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink as RRNavLink } from "react-router-dom";
+import { NavLink as RRNavLink } from "react-router-dom";
 import { Nav, Navbar, NavItem, NavLink } from "reactstrap";
 import "../App.css";
 
