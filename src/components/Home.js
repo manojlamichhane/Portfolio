@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 
 function Home(props) {
   return (
-    <div style={{ backgroundColor: "#f8f9fa", textAlign: "center" }}>
+    <div
+      data-testid="home"
+      style={{ backgroundColor: "#f8f9fa", textAlign: "center" }}
+    >
       <h1>Hi I Am</h1>
       <h1 style={{ color: "#fbbe5c" }}>Manoj Lamichhane</h1>
       <div

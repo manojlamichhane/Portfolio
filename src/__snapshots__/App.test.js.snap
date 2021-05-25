@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light"
+      style="justify-content: flex-end;"
+    >
+      <ul
+        class="navbar-nav"
+        data-testid="navbar"
+      >
+        <li
+          class="nav-item"
+        >
+          <a
+            aria-current="page"
+            class="nav-link active"
+            data-testid="home-link"
+            href="/"
+            style="font-weight: bold; color: rgb(251, 190, 92);"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            data-testid="skills-link"
+            href="/Skills"
+          >
+            Skills
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            data-testid="projects-link"
+            href="/Projects"
+          >
+            Projects
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            data-testid="contact-link"
+            href="/Contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      data-testid="home"
+      style="background-color: rgb(248, 249, 250); text-align: center;"
+    >
+      <h1>
+        Hi I Am
+      </h1>
+      <h1
+        style="color: rgb(251, 190, 92);"
+      >
+        Manoj Lamichhane
+      </h1>
+      <div
+        style="display: flex; justify-content: space-between; margin-top: 100px;"
+      >
+        <p
+          style="width: 65%; background-color: white; padding: 20px; border-radius: 50px;"
+        >
+          I would express myself as a passionate and industrious student with an appetite for learning and enhancing new technical abilities to corporate with the rapidly changing technical world. Pushing myself to the absolute limit, I wish to find the solutions of problem I face while modeling the real work scenario. Wishing to find the bridge between the academic and job based learning so that I can improve and be a perfect professional.
+        </p>
+        <p
+          style="width: 35%; background-color: rgb(251, 190, 92); padding: 20px; border-radius: 50px;"
+        >
+          To start from the scratch on how one becomes a professional engineer after completing academic education with the objectives of the organization always in mind and perform the tasks allocated without any deviation within the specified time and budget.
+        </p>
+      </div>
+      <div>
+        <a
+          href="/Contact"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained"
+            style="margin-top: 100px; margin-bottom: 60px; background-color: rgb(251, 190, 92); width: 200px; height: 50px; border-radius: 25px;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Contact Me
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

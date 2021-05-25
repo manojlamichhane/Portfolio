@@ -11,9 +11,10 @@ function NavigationBar(props) {
       expand="md"
       style={{ justifyContent: "flex-end" }}
     >
-      <Nav navbar>
+      <Nav navbar data-testid="navbar">
         <NavItem>
           <NavLink
+            data-testid="home-link"
             exact
             to="/"
             activeStyle={{
@@ -27,6 +28,7 @@ function NavigationBar(props) {
         </NavItem>
         <NavItem>
           <NavLink
+            data-testid="skills-link"
             to="/Skills"
             activeStyle={{
               fontWeight: "bold",
@@ -39,6 +41,7 @@ function NavigationBar(props) {
         </NavItem>
         <NavItem>
           <NavLink
+            data-testId="projects-link"
             to="/Projects"
             activeStyle={{
               fontWeight: "bold",
@@ -51,6 +54,7 @@ function NavigationBar(props) {
         </NavItem>
         <NavItem>
           <NavLink
+            data-testId="contact-link"
             to="/Contact"
             activeStyle={{
               fontWeight: "bold",
