@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import apiKey from "../emailKey";
 import emailjs from "emailjs-com";
 import TextField from "@material-ui/core/TextField";
@@ -12,18 +12,40 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import "../App.css";
 
 function Contact(props) {
+  const [emailE, setEmailE] = useState("");
+  const emailRegex =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(`service_zlisemh`, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
-      .then(
-        (result) => {
-          alert("Message Sent, We will get back to you shortly", result.text);
-        },
-        (error) => {
-          alert("An error occurred, Please try again", error.text);
-        }
-      );
+
+    if (e.target.from_email.value === "") {
+      setEmailE("Required");
+    } else {
+      if (e.target.from_email.value.match(emailRegex)) {
+        setEmailE("");
+        emailjs
+          .sendForm(
+            `service_zlisemh`,
+            apiKey.TEMPLATE_ID,
+            e.target,
+            apiKey.USER_ID
+          )
+          .then(
+            (result) => {
+              alert(
+                "Message Sent, We will get back to you shortly",
+                result.text
+              );
+            },
+            (error) => {
+              alert("An error occurred, Please try again", error.text);
+            }
+          );
+      } else {
+        setEmailE("Invalid Email address");
+      }
+    }
   };
 
   return (
@@ -87,6 +109,7 @@ function Contact(props) {
           </div>
         </div>
         <div
+          data-testId="contact-form"
           style={{
             width: "45%",
             height: 350,
@@ -110,6 +133,10 @@ function Contact(props) {
               name="from_email"
               type="email"
             />
+            {emailE === "" ? null : (
+              <p style={{ margin: 0, color: "red" }}>{emailE}</p>
+            )}
+
             <TextField
               multiline
               rows={2}
@@ -118,7 +145,7 @@ function Contact(props) {
               name="message"
             />
             <Button
-              style={{ width: "100%", backgroundColor: "white", marginTop: 20 }}
+              style={{ width: "100%", backgroundColor: "white", marginTop: 10 }}
               type="submit"
             >
               Send
