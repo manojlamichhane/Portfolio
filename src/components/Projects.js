@@ -15,7 +15,7 @@ import rnapp from "../assets/site-logo.png";
 
 function Projects(props) {
   return (
-    <div style={{ padding: 80 }}>
+    <div style={{ paddingLeft: 80, paddingRight: 80 }}>
       <h1 style={{ textAlign: "center" }}>Projects</h1>
       <Grid container style={{ marginTop: 100 }}>
         <Grid item xs={12} sm={12} md={12} lg={6}>

@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 
 function Skills(props) {
   return (
-    <div style={{ padding: 80 }}>
+    <div style={{ paddingLeft: 80, paddingRight: 80 }}>
       <h1 style={{ textAlign: "center" }}>Skills</h1>
       <Grid container style={{ marginTop: 100 }}>
         <Grid item xs={6} sm={4} md={2}>
