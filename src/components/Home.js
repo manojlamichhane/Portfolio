@@ -6,7 +6,10 @@ function Home(props) {
   return (
     <div
       data-testid="home"
-      style={{ backgroundColor: "#f8f9fa", textAlign: "center" }}
+      style={{
+        backgroundColor: "#f8f9fa",
+        textAlign: "center",
+      }}
     >
       <h1>Hi I Am</h1>
       <h1 style={{ color: "#fbbe5c" }}>Manoj Lamichhane</h1>
